@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Rulerr Envato Market.
+ * This file is part of Envato Market PHP Client.
  *
  * (c) Brian Faust <hello@brianfaust.de>
  *
