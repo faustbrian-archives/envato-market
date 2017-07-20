@@ -11,18 +11,32 @@ $ composer require faustbrian/envatomarket-php-client
 ## Usage
 
 ```php
-$client = new BrianFaust\EnvatoMarket\Client();
-$client->setConfig(['apiKey' => 'YOUR_API_KEY']);
+<?php
 
-$response = $client->api('File')->scan('infected.rar');
+$client = new BrianFaust\EnvatoMarket\Client([
+    'client_id' => 'your_client_id',
+    'client_secret' => 'your_client_secret',
+    'access_token' => 'your_access_token'
+]);
 
-dump($response);
+dump($client->api('Account')->info()->json());
+```
+
+## Testing
+
+``` bash
+$ phpunit
 ```
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Brian Faust at hello@brianfaust.de. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to Brian Faust at hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+
+## Credits
+
+- [Brian Faust](https://github.com/faustbrian)
+- [All Contributors](../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.de)
+[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
