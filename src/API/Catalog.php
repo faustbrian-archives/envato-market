@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Envato Market PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\EnvatoMarket\API;
+namespace Plients\EnvatoMarket\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Catalog extends AbstractAPI
 {
     /**
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function collection(int $id): HttpResponse
     {
@@ -30,7 +30,7 @@ class Catalog extends AbstractAPI
     /**
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function item(int $id): HttpResponse
     {
@@ -40,7 +40,7 @@ class Catalog extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function searchItems(array $parameters): HttpResponse
     {
@@ -50,7 +50,7 @@ class Catalog extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function searchComments(array $parameters): HttpResponse
     {
@@ -60,7 +60,7 @@ class Catalog extends AbstractAPI
     /**
      * @param string $site
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function popular(string $site): HttpResponse
     {
@@ -70,7 +70,7 @@ class Catalog extends AbstractAPI
     /**
      * @param string $site
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function categories(string $site): HttpResponse
     {
@@ -80,7 +80,7 @@ class Catalog extends AbstractAPI
     /**
      * @param int $item_id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function itemPrices(int $item_id): HttpResponse
     {
@@ -91,7 +91,7 @@ class Catalog extends AbstractAPI
      * @param string $site
      * @param string $category
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function newFiles(string $site, string $category): HttpResponse
     {
@@ -101,7 +101,7 @@ class Catalog extends AbstractAPI
     /**
      * @param string $site
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function features(string $site): HttpResponse
     {
@@ -111,7 +111,7 @@ class Catalog extends AbstractAPI
     /**
      * @param string $site
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function randomNewFiles(string $site): HttpResponse
     {

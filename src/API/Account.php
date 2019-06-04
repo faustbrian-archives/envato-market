@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Envato Market PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\EnvatoMarket\API;
+namespace Plients\EnvatoMarket\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Account extends AbstractAPI
 {
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function sales(array $parameters = []): HttpResponse
     {
@@ -30,7 +30,7 @@ class Account extends AbstractAPI
     /**
      * @param string $code
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function sale(string $code): HttpResponse
     {
@@ -40,7 +40,7 @@ class Account extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function listPurchases(array $parameters = []): HttpResponse
     {
@@ -50,7 +50,7 @@ class Account extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function purchases(array $parameters = []): HttpResponse
     {
@@ -60,7 +60,7 @@ class Account extends AbstractAPI
     /**
      * @param string $code
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function purchase(string $code): HttpResponse
     {
@@ -68,7 +68,7 @@ class Account extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function account(): HttpResponse
     {
@@ -76,7 +76,7 @@ class Account extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function username(): HttpResponse
     {
@@ -84,7 +84,7 @@ class Account extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function email(): HttpResponse
     {
@@ -92,7 +92,7 @@ class Account extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function salesByMonth(): HttpResponse
     {
@@ -102,7 +102,7 @@ class Account extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function statement(array $parameters = []): HttpResponse
     {
@@ -112,7 +112,7 @@ class Account extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function download(array $parameters = []): HttpResponse
     {

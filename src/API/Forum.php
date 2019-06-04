@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Envato Market PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\EnvatoMarket\API;
+namespace Plients\EnvatoMarket\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Forum extends AbstractAPI
 {
     /**
      * @param string $site
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function activeThreads(string $site): HttpResponse
     {
@@ -30,7 +30,7 @@ class Forum extends AbstractAPI
     /**
      * @param string $username
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function forumPosts(string $username): HttpResponse
     {
@@ -40,7 +40,7 @@ class Forum extends AbstractAPI
     /**
      * @param string $thread_id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function threadStatus(string $thread_id): HttpResponse
     {

@@ -5,20 +5,20 @@ declare(strict_types=1);
 /*
  * This file is part of Envato Market PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\EnvatoMarket\API;
+namespace Plients\EnvatoMarket\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class User extends AbstractAPI
 {
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function collections(): HttpResponse
     {
@@ -28,7 +28,7 @@ class User extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function createCollection(array $parameters): HttpResponse
     {
@@ -38,7 +38,7 @@ class User extends AbstractAPI
     /**
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function collection(int $id): HttpResponse
     {
@@ -48,7 +48,7 @@ class User extends AbstractAPI
     /**
      * @param string $username
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function user(string $username): HttpResponse
     {
@@ -58,7 +58,7 @@ class User extends AbstractAPI
     /**
      * @param string $username
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function badges(string $username): HttpResponse
     {
@@ -68,7 +68,7 @@ class User extends AbstractAPI
     /**
      * @param string $username
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function itemsBySite(string $username): HttpResponse
     {
@@ -79,7 +79,7 @@ class User extends AbstractAPI
      * @param string $username
      * @param string $site
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function newFilesBySite(string $username, string $site): HttpResponse
     {

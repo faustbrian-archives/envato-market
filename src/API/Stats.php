@@ -5,20 +5,20 @@ declare(strict_types=1);
 /*
  * This file is part of Envato Market PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\EnvatoMarket\API;
+namespace Plients\EnvatoMarket\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Stats extends AbstractAPI
 {
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function totalUsers(): HttpResponse
     {
@@ -26,7 +26,7 @@ class Stats extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function totalItems(): HttpResponse
     {
@@ -36,7 +36,7 @@ class Stats extends AbstractAPI
     /**
      * @param string $site
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function numberOfFiles(string $site): HttpResponse
     {

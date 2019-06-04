@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/envatomarket-php-client",
+    "name": "plients/envatomarket",
     "description": "A Envato Market Client for PHP",
-    "keywords": ["api", "http", "envato market"],
+    "keywords": [
+        "api",
+        "http",
+        "envato market"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0",
@@ -19,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\EnvatoMarket\\": "src"
+            "Plients\\EnvatoMarket\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\EnvatoMarket\\": "tests"
+            "Plients\\Tests\\EnvatoMarket\\": "tests"
         }
     },
     "config": {
